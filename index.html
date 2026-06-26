@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>PlanNer - Smart Study Ecosystem</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-300 antialiased selection:bg-blue-600 selection:text-white">
+
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-premiumDark/80 border-b border-gray-800/50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-poppins font-extrabold text-2xl tracking-wider text-white">
+                        Plan<span class="text-electricBlue">Ner</span>
+                    </span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8 font-medium tracking-wide text-sm">
+                        <a href="#home" class="text-white hover:text-electricBlue transition-colors duration-300">Home</a>
+                        <a href="#features" class="hover:text-white transition-colors duration-300">Features</a>
+                        <a href="#about" class="hover:text-white transition-colors duration-300">About</a>
+                        <a href="#testimonials" class="hover:text-white transition-colors duration-300">Reviews</a>
+                        <a href="#contact" class="hover:text-white transition-colors duration-300">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="#contact" class="bg-electricBlue hover:bg-blue-700 text-white font-poppins px-6 py-2.5 rounded-full font-semibold text-sm transition-all duration-300 transform hover:-translate-y-0.5 glow-effect">
+                        Get Started
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-cardDark border-b border-gray-800 px-4 pt-2 pb-4 space-y-2">
+            <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-white">Home</a>
+            <a href="#features" class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white">Features</a>
+            <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white">About</a>
+            <a href="#testimonials" class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white">Reviews</a>
+            <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden py-20 px-4">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-electricBlue/10 rounded-full blur-[120px] pointer-events-none"></div>
+        
+        <div class="relative max-w-4xl mx-auto text-center z-10">
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-4 rounded-full text-xs font-semibold bg-gray-900 border border-gray-800 text-accentGreen mb-6 tracking-wider uppercase">
+                <span class="w-1.5 h-1.5 rounded-full bg-accentGreen animate-pulse"></span> Intelligent Workspace
+            </span>
+            <h1 class="font-poppins font-extrabold text-5xl md:text-7xl mb-6 tracking-tight text-gradient">
+                Plan Smarter,<br>Study Better.
+            </h1>
+            <p class="font-inter text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Organize your study schedule, track goals, and stay productive with an ecosystem tailored for high-achieving students.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-electricBlue hover:bg-blue-700 text-white font-poppins font-semibold rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-1 text-center glow-effect">
+                    Get Started Free
+                </a>
+                <a href="#features" class="w-full sm:w-auto px-8 py-4 bg-transparent border border-gray-800 hover:border-gray-600 text-gray-300 hover:text-white font-poppins font-semibold rounded-xl transition-all duration-300 text-center">
+                    Explore Ecosystem
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-24 bg-cardDark/40 border-t border-b border-gray-900 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-poppins font-bold text-3xl md:text-4xl text-white mb-4">Engineered for Focus</h2>
+                <p class="text-gray-400 max-w-md mx-auto">Everything you need to master your workflow and optimize retention.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-cardDark p-8 rounded-2xl border border-gray-800/80 hover:border-electricBlue/50 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-electricBlue transition-colors duration-300">
+                        <svg class="w-6 h-6 text-electricBlue group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-white mb-3">Study Schedule</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Dynamic time-blocking grids that automatically adjust around your optimal peak productivity windows.</p>
+                </div>
+                <div class="bg-cardDark p-8 rounded-2xl border border-gray-800/80 hover:border-accentGreen/50 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-green-600/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accentGreen transition-colors duration-300">
+                        <svg class="w-6 h-6 text-accentGreen group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-white mb-3">Daily Goals</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Micro-target tasks built on an interactive gamified system to keep consistency chains unbroken.</p>
+                </div>
+                <div class="bg-cardDark p-8 rounded-2xl border border-gray-800/80 hover:border-purple-500/50 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-purple-600/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-600 transition-colors duration-300">
+                        <svg class="w-6 h-6 text-purple-400 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-white mb-3">Progress Tracking</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Deep-dive spatial visual analytics that accurately pinpoint velocity, fatigue levels, and retention metrics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-4 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-electricBlue font-poppins font-semibold tracking-wider text-sm uppercase block mb-3">Our Mission</span>
+                <h2 class="font-poppins font-bold text-3xl md:text-4xl text-white mb-6">Designed to eliminate academic friction.</h2>
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    Student Study Planner helps students manage their daily study routine efficiently and improve productivity. We believe structure shouldn't feel like a constraint—it should feel like leverage.
+                </p>
+                <div class="border-l-2 border-electricBlue pl-4 py-2 italic text-gray-400 text-sm">
+                    "Simplifying heavy micro-schedules into elegant, high-impact workflows."
+                </div>
+            </div>
+            <div class="relative bg-gradient-to-tr from-blue-600/20 to-purple-600/10 p-1 rounded-2xl border border-gray-800">
+                <div class="bg-premiumDark rounded-xl p-8 min-h-[250px] flex flex-col justify-between">
+                    <div class="flex items-center justify-between border-b border-gray-800 pb-4 mb-4">
+                        <span class="text-xs font-mono text-gray-500">SYSTEM_STATUS // ACTIVE</span>
+                        <div class="flex gap-1.5">
+                            <span class="w-2.5 h-2.5 rounded-full bg-red-500/40"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/40"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-green-500/40"></span>
+                        </div>
+                    </div>
+                    <div class="space-y-3 font-mono text-xs text-blue-400">
+                        <p>&gt; initializing intelligent_scheduling_matrix...</p>
+                        <p class="text-green-400">&gt; daily targets optimized successfully [100%]</p>
+                        <p class="text-gray-500">&gt; cognitive load balanced across 3 core subjects.</p>
+                    </div>
+                    <div class="mt-8 text-right">
+                        <span class="text-sm font-poppins font-semibold text-white">EduPlan Core v1.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-24 bg-cardDark/40 border-t border-gray-900 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-poppins font-bold text-3xl md:text-4xl text-white mb-4">Validated by Scholars</h2>
+                <p class="text-gray-400 max-w-md mx-auto">Hear from users who transformed their chaotic study habits into clean execution.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-cardDark p-6 rounded-2xl border border-gray-800 flex flex-col justify-between">
+                    <p class="text-gray-400 text-sm leading-relaxed italic mb-6">"The UI is unbelievably clean. It genuinely makes me look forward to setting my parameters and sticking to my study block chains."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center font-bold text-white text-sm">A</div>
+                        <div>
+                            <h4 class="text-white text-sm font-semibold">Ali Khan</h4>
+                            <span class="text-xs text-gray-500">Computer Science Student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-cardDark p-6 rounded-2xl border border-gray-800 flex flex-col justify-between">
+                    <p class="text-gray-400 text-sm leading-relaxed italic mb-6">"Before this, I was balancing three different tracking tools. Having visual progress analytics paired directly with daily goals is a game changer."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center font-bold text-white text-sm">Z</div>
+                        <div>
+                            <h4 class="text-white text-sm font-semibold">Zainab Raza</h4>
+                            <span class="text-xs text-gray-500">Pre-Med Candidate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-cardDark p-6 rounded-2xl border border-gray-800 flex flex-col justify-between">
+                    <p class="text-gray-400 text-sm leading-relaxed italic mb-6">"Super fast, highly responsive layouts. It feels more like a luxury dashboard environment rather than standard bland school planners."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center font-bold text-white text-sm">H</div>
+                        <div>
+                            <h4 class="text-white text-sm font-semibold">Hamza Ahmed</h4>
+                            <span class="text-xs text-gray-500">Engineering Undergraduate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-4 max-w-4xl mx-auto">
+        <div class="bg-gradient-to-b from-cardDark to-premiumDark p-8 md:p-12 rounded-3xl border border-gray-800 relative overflow-hidden">
+            <div class="absolute -bottom-20 -right-20 w-60 h-60 bg-electricBlue/10 rounded-full blur-[80px] pointer-events-none"></div>
+            
+            <div class="relative z-10 text-center max-w-xl mx-auto">
+                <h2 class="font-poppins font-bold text-3xl text-white mb-4">Elevate Your Architecture</h2>
+                <p class="text-gray-400 text-sm mb-8">Drop your email below to be the first to know when the integrated premium dashboards go live.</p>
+                
+                <form class="flex flex-col sm:flex-row gap-3" onsubmit="event.preventDefault(); alert('Ecosystem Synced!');">
+                    <input type="email" placeholder="Enter your academic email" required class="w-full px-5 py-3.5 bg-premiumDark border border-gray-800 focus:border-electricBlue rounded-xl text-white placeholder-gray-600 focus:outline-none transition-all duration-300 text-sm">
+                    <button type="submit" class="w-full sm:w-auto px-6 py-3.5 bg-electricBlue hover:bg-blue-700 text-white font-poppins font-semibold rounded-xl text-sm transition-all duration-300 whitespace-nowrap glow-effect">
+                        Join Waitlist
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+   <!-- 7. FOOTER -->
+    <footer class="border-t border-gray-900 bg-premiumDark pt-16 pb-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <!-- Top Footer Matrix -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <!-- Brand Column -->
+                <div class="space-y-4">
+                    <span class="font-poppins font-extrabold text-2xl tracking-wider text-white">
+                        PLAN<span class="text-electricBlue">Ner</span>
+                    </span>
+                    <p class="text-xs text-gray-500 leading-relaxed max-w-xs font-inter">
+                        Next-generation study ecosystem engineered to optimize cognitive load, maximize retention, and streamline student workflows.
+                    </p>
+                </div>
+
+                <!-- Product Links -->
+                <div>
+                    <h4 class="text-xs font-mono font-bold tracking-widest text-white uppercase mb-4 text-electricBlue">// SYSTEM</h4>
+                    <ul class="space-y-2 text-xs text-gray-500 font-inter">
+                        <li><a href="#features" class="hover:text-white transition-colors duration-200">Core Engine</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors duration-200">Architecture</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition-colors duration-200">Metrics & Analytics</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources Links -->
+                <div>
+                    <h4 class="text-xs font-mono font-bold tracking-widest text-white uppercase mb-4 text-accentGreen">// RESOURCES</h4>
+                    <ul class="space-y-2 text-xs text-gray-500 font-inter">
+                        <li><a href="#" class="hover:text-white transition-colors duration-200">Documentation</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-200">API Reference</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-200">Open Source Core</a></li>
+                    </ul>
+                </div>
+
+                <!-- Global Status -->
+                <div class="bg-cardDark/50 p-4 rounded-xl border border-gray-900 flex flex-col justify-between min-h-[100px]">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[10px] font-mono text-gray-500">CLOUD NODE</span>
+                        <span class="inline-flex items-center gap-1 text-[10px] font-mono text-accentGreen">
+                            <span class="w-1 h-1 rounded-full bg-accentGreen animate-ping"></span> ONLINE
+                        </span>
+                    </div>
+                    <div class="text-xs font-mono text-gray-400">
+                        ping_latency: <span class="text-white">12ms</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright & Social Matrix -->
+            <div class="border-t border-gray-900/60 pt-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+                <p class="text-[11px] text-gray-600 font-mono tracking-wider">&copy; 2026 PLANNER CORE. POWERING ACADEMICS.</p>
+                <div class="flex items-center space-x-6 text-xs text-gray-500 font-inter">
+                    <a href="mailto:info@planner.pro" class="hover:text-white transition-colors duration-200">Email</a>
+                    <a href="https://github.com" target="_blank" class="hover:text-white transition-colors duration-200">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank" class="hover:text-white transition-colors duration-200">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Responsive Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if(mobileMenu.classList.contains('hidden')) {
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            } else {
+                menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            }
+        });
+
+        // Close menu on navigation click
+        const navLinks = mobileMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            });
+        });
+    </script>
+</body>
+</html>
